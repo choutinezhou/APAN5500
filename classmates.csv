@@ -1,0 +1,33 @@
+Name,Gender,Location,University,tuition,currency,Degree,Degree Two,Degree Three, Exp ( From Field ),Carrer Plan ( To Field ),Tags
+Hailin Zhou,F,Eugene,University of Oregon,"33,442",US,Accounting,,,analyst,Audit,Designing
+Yujin Zhi,M,West Lafayette,Purdue University,"28,804",US,Actuarial Science,Statistics,,Data,Data,
+Jeffrey Geng,M,Blacksburg,Virginia polytechnic institute and state university,"29,975",US,Mathematics,Statistics,,Finance,Finance,
+Wenyi Zhuang,F,Seattle,University of Washington,"34,791",US,Mathematics,,,,consulting,
+Alisa Li,F,Shanghai,Shanghai University of Finance and Economics,"5,000",RMB,Banking,Finance,,Finance,Finance,
+Zeren Bai,M,Shanghai,Tongji University,6150,RMB,Civil Engineering,,,Airline Company,IT,"Design, Technology"
+Jiaming Xu,M,West Lafayette,Purdue University,"28,804",US,Computer Science,,,Product Management ,consulting,
+Sergio Monsalvo Diaz,M,Monterrey,Monterrey institute of technology and higher education,"90,173",Peso,Economics,Finance,,,Data Science,
+Buchi Onwuka,M,New Jersey,Rutgers University,"30,023",US,Economics,Mathematics,Psychology,environmental,Data,
+WanTing Sun,F,Singapore,Singapore Management University,"24,400",Singapore,Economics,Finance,,Finance,Finance,Risk analyst
+Yueheng Tang,F,Los Angeles,University of Southern California,50277,US,Economics,,,Economics,big data,Database Architecture
+Chenning Zhang,F,Austin,University of Texas at Austin,"35,906",US,Economics,,,IT,IT/ Retailer,
+Hong Zhu,F,Beijing,Renmin University,5000,RMB,Economics,,,Financial Advisor,Business Analyst,"Photograph, Photoshop"
+Shu Zhu,F,Beijing,Renmin University,5000,RMB,Economics,,,,Finance Analyst,
+Yuqing Lei,F,Shanghai,Shanghai University of Finance and Economics,"5,000",RMB,Finance,Economic Journalism,,Banking,Finance,Photographer
+Yanni Ma,F,Beijing,Renmin Unveirsity,"5,000",RMB,Finance,Mathematics,,Analyst,Consulting,
+Zizeming Yang,M,Austin,University of Texas at Austin,"35,906",US,Finance,,,Finance,Consulting,
+Ruiqiao Tan,F,Xiamen,Xiamen University,5460,rmb,Financial Management,Accounting,,Public offering fund,Finance,
+Choutine Zhou,F,New York,Baruch College,16800,US,Informatinon System,,,media,Data,
+Yunhong Wei,F,Beijing,University of International Business and Economics,5000,RMB,Management,Finance,,"investment, technology",Entrepreneurship,Investment
+Yufeng Jiang,M,Austin,University of Texas at Austin,"35,906",US,Mathematics,Economics,,Finance,Data Science,
+Danyu Li,M,Geneva,Hobart and William Smith Colleges,51523,US,Mathematics,,,IT,Data Science,Programming
+Lisha Lin,F,Vancouver,University of British Columbia,"41,777.10",CAD,Mathematics,Economics,,"Technology, Retail",Wealth Management,
+Mengyang Ma,F,Seattle,University of Washington in Seattle,"34,791",US,Mathematics,Economics,,Trading/ Insurance,Analyst,
+Chengxian Sun,M,Beijing,University of Illinois at Urbana-Champaign,"31,320",US,Mathematics,Filmmaking,,Finance,Finance,
+Zhenqi Yang,M,San Diego,University of California in San Diego,"40,255",US,Mathematics,,,Technical,Consulting/ Tech,
+Wei Zhou,M,Beijing,Central University of FInance and Economics,5000,RMB,Mathematics,,,Fianance,Analyst,
+Yiwen Zhou,F,Xiangtan,Xiangtan University,5000,RMB,Mathematics,,,,Data,Soccer
+Wendi Yan,F,Wuhan,Zhongnan Uiversity of Economics and Law,5000,RMB,Public finance,Finance,,Finance,Data Science,
+Yuanzhen Liu,M,Shanghai,Shanghai University of Finance and Economics,5000,RMB,Quantitative Economics,,,Finance,,
+Jia-Wei Liang,F,Taiwan,National Tsing Hua University,"51,220",TWD,Quantitative Finance,Economics,,Banking,Analyst,
+Feng Bian,M,Minneapolis,University of Minnesota,"11,105",US,Statistics,Computer Science,,Programmer,Analyst,Technology
