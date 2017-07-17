@@ -1,19 +1,6 @@
-library(shiny)
-library(shinydashboard)
-library(htmltools)
-library(dplyr)
-library(ggmap)
-library(leaflet)
-library(googleVis)
-library(ggplot2)
-library(plotly)
-library(RColorBrewer)
-# wordcloud library
-library(tm)
-library(SnowballC)
-library(wordcloud)
-
-
+if(!require(needs)){install.packages("needs")}
+needs::needs(shiny, shinydashboard, htmltools, dplyr, ggmap, leaflet, googleVis, ggplot2,
+             plotly, RColorBrewer, tm, SnowballC, wordcloud)
 
 data=read.csv('FinalData.csv')
 
