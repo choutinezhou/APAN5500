@@ -1,5 +1,3 @@
-
-
 library(shiny)
 library(shinydashboard)
 library(htmltools)
@@ -10,10 +8,14 @@ library(googleVis)
 library(ggplot2)
 library(plotly)
 library(RColorBrewer)
+# wordcloud library
+library(tm)
+library(SnowballC)
+library(wordcloud)
 
 
 
-data=read.csv('newData.csv')
+data=read.csv('FinalData.csv')
 
 # count gender 
 genderCount <- data %>% count(Gender)
@@ -37,6 +39,31 @@ allDegree=rbind(degreeDF1,degreeDF2,degreeDF3)
 # count all degree
 degreeCount =allDegree %>% count(degree) %>% mutate(countDegree=n) %>% arrange(desc(countDegree))
 
+###############################################################
+#####################process wordcloud#########################
+data$Tags[data$Tags==""]<-NA
+interests <-data$Tags[!is.na(data$Tags)]
+interests <- iconv(interests,to="utf-8")
+interests <- Corpus(VectorSource(interests))
+
+
+toSpace <- content_transformer(function (x , pattern ) gsub(pattern, " ", x))
+interests <- tm_map(interests, toSpace, ",")
+
+
+interests <- tm_map(interests, PlainTextDocument)
+interests <- tm_map(interests, removeWords, stopwords('english'))
+
+interests <- iconv(interests,to="utf-8")
+
+tm <- DocumentTermMatrix(interests)
+m <- as.matrix(tm)
+v <- sort(rowSums(m),decreasing=TRUE)
+d <- data.frame(word = names(v),freq=v)
+head(d, 10)
+
+
+wordcloud(interests, max.words = 100, random.order = FALSE)
 
 #=================================== start server=====================================
 function(input, output, session) {
@@ -48,32 +75,35 @@ function(input, output, session) {
       y= ~n,
       name = "Gender",
       type = "bar",
-      marker = list(color = c('rgba(255, 133, 133,1)', 'rgba(158, 216, 255, 1)')))
+      marker = list(color = c('rgba(255, 133, 133,1)', 'rgba(158, 216, 255, 1)')))%>%
+      layout(autosize = F, width = 4, height = 900)
     
   })
   
   output$degree <- renderPlotly({
     g <- ggplot(degreeCount,aes(x=reorder(degree,countDegree),y=countDegree,fill=countDegree))+geom_bar(stat='identity')+coord_flip()
-    ggplotly(g)
-    
-    ## not sure how to change to descending order in plotly
-    # d <- plot_ly(
-    #   degreeCount,
-    #   y= ~degree,
-    #   x= ~countDegree,
-    #   name = "Degree Counts",
-    #   type = "bar", orientation = 'h',color = ~clarity)
-    # 
-    
+    ggplotly(g)%>% layout(height = 900, width = 6)
+
     })
   
-  # map section; can be opted to change 
-  output$map <- renderLeaflet({
-    leaflet(data) %>% addTiles() %>%
-      addCircles(lng = ~long, lat = ~lat, weight = 1,
-                 radius = ~sqrt(tuition)*100000, popup = ~University) 
+  
+  # cluster markers map
+  output$location <- renderLeaflet({
+    leaflet(data) %>% addTiles() %>% addMarkers(lng = ~long, lat = ~lat,popup =paste(data$Name,"<br>",data$University,"<br>",data$Degree,"<br>"),
+                                                clusterOptions = markerClusterOptions())
     
   })
+  
+  
+  # map section; can be opted to change 
+  output$schoolMap <- renderLeaflet({
+    leaflet(data) %>% addTiles() %>%
+      addCircles(lng = ~long, lat = ~lat, weight = 1,
+                 radius = ~sqrt(tuition)*1400, popup = data$University) 
+    
+  })
+  
+  
   
 }
 
