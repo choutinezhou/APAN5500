@@ -1,4 +1,4 @@
-needs(rvest, stringr)
+needs::needs(rvest, stringr)
 
 url = "Topic  1. Getting to Know You Discussion Forum.htm"
 page = read_html(url)

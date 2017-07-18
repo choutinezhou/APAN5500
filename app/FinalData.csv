@@ -1,0 +1,37 @@
+,Name,Gender,Location,University,tuition,currency,Degree,Degree.Two,Degree.Three,Exp...From.Field..,Carrer.Plan...To.Field..,Tags,long,lat
+1,Hailin Zhou,F,"Eugene, Oregon",University of Oregon,33442,USD,Accounting,,,Accounting,Audit,"Treasury Analyst, Design, CPA",-123.0867536,44.0520691
+2,Yujin Zhi,M,West Lafayette,Purdue University,28804,USD,Actuarial Science,Statistics,,Data,Data,,-86.9080655,40.4258686
+3,Jeffrey Geng,M,Blacksburg,Virginia polytechnic institute and state university,29975,USD,Mathematics,Statistics,,Finance,Finance,,-80.4139393,37.2295733
+4,Wenyi Zhuang,F,Seattle,University of Washington,34791,USD,Mathematics,,,,Consulting,,-122.3320708,47.6062095
+5,Alisa Li,F,Shanghai,Shanghai University of Finance and Economics,5000,RMB,Banking,Finance,,Finance,Finance,,121.4737021,31.2303904
+6,Zeren Bai,M,Shanghai,Tongji University,6150,RMB,Civil Engineering,,,Airline Company,IT,"Design, Technology",121.4737021,31.2303904
+7,Jiaming Xu,M,West Lafayette,Purdue University,28804,USD,Computer Science,,,Product Management ,consulting,,-86.9080655,40.4258686
+8,Sergio Monsalvo Diaz,M,Monterrey,Monterrey institute of technology and higher education,90173,Peso,Economics,Finance,,,Data Science,,-100.3161126,25.6866142
+9,Buchi Onwuka,M,New Jersey,Rutgers University,30023,USD,Economics,Mathematics,Psychology,environmental,Data,,-74.4056612,40.0583238
+10,WanTing Sun,F,Singapore,Singapore Management University,24400,Singapore,Economics,Finance,,Finance,Finance,"Risk analyst, Investment Banking",103.819836,1.352083
+11,Yueheng Tang,F,Los Angeles,University of Southern California,50277,USD,Economics,,,Economics,Big Data,"Database Architecture,Python",-118.2436849,34.0522342
+12,Chenning Zhang,F,Austin,University of Texas at Austin,35906,USD,Economics,,,IT,IT/ Retailer,,-97.7430608,30.267153
+13,Hong Zhu,F,Beijing,Renmin University,5000,RMB,Economics,,,Financial Advisor,Business Analyst,"Photograph, Photoshop",116.4073963,39.9041999
+14,Shu Zhu,F,Beijing,Renmin University,5000,RMB,Economics,,,,Finance Analyst,,116.4073963,39.9041999
+15,Yuqing Lei,F,Shanghai,Shanghai University of Finance and Economics,5000,RMB,Finance,Economic Journalism,,Banking,Finance,Photography,121.4737021,31.2303904
+16,Yanni Ma,F,Beijing,Renmin Unveirsity,5000,RMB,Finance,Mathematics,,Analyst,Consulting,,116.4073963,39.9041999
+17,Zizeming Yang,M,Austin,University of Texas at Austin,35906,USD,Finance,,,Finance,Consulting,"Technology, Consulting",-97.7430608,30.267153
+18,Ruiqiao Tan,F,Xiamen,Xiamen University,5460,rmb,Finance,Accounting,,Public offering fund,Finance,"Graphic Design, High-Dimensional Data",118.089425,24.479833
+19,Choutine Zhou,F,New York,Baruch College,16800,USD,Informatinon System,,,media,Data,,-74.0059413,40.7127837
+20,Yunhong Wei,F,Beijing,University of International Business and Economics,5000,RMB,Management,Finance,,"Investment, Technology",Entrepreneurship,Investment,116.4073963,39.9041999
+21,Yufeng Jiang,M,Austin,University of Texas at Austin,35906,USD,Mathematics,Economics,,Finance,Data Science,,-97.7430608,30.267153
+22,Danyu Li,M,"Geneva,NY",Hobart and William Smith Colleges,51523,USD,Mathematics,,,IT,Data Science,"Programming, R, JMP",-76.9856,42.868
+23,Lisha Lin,F,Vancouver,University of British Columbia,41777,CAD,Mathematics,Economics,,"Technology, Retail",Wealth Management,,-123.1207375,49.2827291
+24,Mengyang Ma,F,Seattle,University of Washington in Seattle,34791,USDD,Mathematics,Economics,,Trading/ Insurance,Analyst,"Tableau, Logo Design, Visual Design",-122.3320708,47.6062095
+25,Chengxian Sun,M,Beijing,University of Illinois at Urbana-Champaign,31320,USD,Mathematics,Filmmaking,,Finance,Finance,Venture Capital,116.4073963,39.9041999
+26,Zhenqi Yang,M,San Diego,University of California in San Diego,40255,USD,Mathematics,,,Technical,Consulting/ Tech,"High-Tech, Ice Sculpture",-117.1610838,32.715738
+27,Wei Zhou,M,Beijing,Central University of FInance and Economics,5000,RMB,Mathematics,,,Fianance,Analyst,,116.4073963,39.9041999
+28,Yiwen Zhou,F,Xiangtan,Xiangtan University,5000,RMB,Mathematics,,,,Data,Soccer,112.944026,27.829795
+29,Wendi Yan,F,Wuhan,Zhongnan Uiversity of Economics and Law,5000,RMB,Finance,,,,Data Science,Analytics,114.305539,30.592849
+30,Yuanzhen Liu,M,Shanghai,Shanghai University of Finance and Economics,5000,RMB,Quantitative Economics,,,Finance,,,121.4737021,31.2303904
+31,Jia-Wei Liang,F,Taiwan,National Tsing Hua University,51220,TWD,Quantitative Finance,Economics,,Banking,Analyst,,120.960515,23.69781
+32,Feng Bian,M,Minneapolis,University of Minnesota,11105,USD,Statistics,Computer Science,,Programmer,Analyst,"Technology, Topology Graph",-93.2650108,44.977753
+33,Yun han Yang,M,Wuhan,Hube University ,5000,RMB,Economics,,,Data Analytics ,Data Analytics ,"Quantitative Strategist, Buy Side, R, Python, Web-Scaping, Kaggle",114.3055,30.5928
+34,Elisa Yao,F,DC,John Hopkins University,50410,USD,Finance,Public Management,,Finance,Finance,"Risk Management, Commertial Banking, Financial Planning, Data Analysis, Venture Capital, Text Mining",-77.0369,38.9072
+35,Shu Tian,M,Guangzhou,Sun Yat-sen University,5000,RMB,Computer Science,,,IT,IT ,"Analytics,  JavaScript, Python, Web Design",113.2644,23.1291
+36,Nassib Saad,M,New York,,,,Finance,,,Accounting,Business Analyst ,Tableau,-74.0059413,40.7127837
