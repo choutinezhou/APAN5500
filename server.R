@@ -28,32 +28,35 @@ degreeCount =allDegree %>% count(degree) %>% mutate(countDegree=n) %>% arrange(d
 
 ###############################################################
 #####################process wordcloud#########################
-data$Tags[data$Tags==""]<-NA
-interests <-data$Tags[!is.na(data$Tags)]
-interests <- iconv(interests,to="utf-8")
-interests <- Corpus(VectorSource(interests))
-
-
-toSpace <- content_transformer(function (x , pattern ) gsub(pattern, " ", x))
-interests <- tm_map(interests, toSpace, ",")
-
-
-interests <- tm_map(interests, PlainTextDocument)
-interests <- tm_map(interests, removeWords, stopwords('english'))
-
-interests <- iconv(interests,to="utf-8")
-
-tm <- DocumentTermMatrix(interests)
-m <- as.matrix(tm)
-v <- sort(rowSums(m),decreasing=TRUE)
-d <- data.frame(word = names(v),freq=v)
-head(d, 10)
-
-
-wordcloud(interests, max.words = 100, random.order = FALSE)
+if(!TRUE){
+  data$Tags[data$Tags==""]<-NA
+  interests <-data$Tags[!is.na(data$Tags)]
+  interests <- iconv(interests,to="utf-8")
+  interests <- Corpus(VectorSource(interests))
+  
+  
+  toSpace <- content_transformer(function (x , pattern ) gsub(pattern, " ", x))
+  interests <- tm_map(interests, toSpace, ",")
+  
+  
+  interests <- tm_map(interests, PlainTextDocument)
+  interests <- tm_map(interests, removeWords, stopwords('english'))
+  
+  interests <- iconv(interests,to="utf-8")
+  
+  tm <- DocumentTermMatrix(interests)
+  m <- as.matrix(tm)
+  v <- sort(rowSums(m),decreasing=TRUE)
+  d <- data.frame(word = names(v),freq=v)
+  head(d, 10)
+  
+  
+  wordcloud(interests, max.words = 100, random.order = FALSE)
+  
+}
 
 #=================================== start server=====================================
-function(input, output, session) {
+shinyServer(function(input, output, session) {
   output$gender <- renderPlotly({
     
     p <- plot_ly(
@@ -92,5 +95,5 @@ function(input, output, session) {
   
   
   
-}
+})
 

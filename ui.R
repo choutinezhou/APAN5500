@@ -1,3 +1,5 @@
+needs::needs(shiny, shinydashboard, htmltools, dplyr, ggmap, leaflet, googleVis, ggplot2,
+             plotly, RColorBrewer, tm, SnowballC, wordcloud)
 dashboardPage(skin="black",
               dashboardHeader(title = span(tagList(icon("fa-graduation-cap",class="fa fa-graduation-cap",lib = "font-awesome"), "APAN 5500 Classmates")),titleWidth = 1000),
               
@@ -15,7 +17,7 @@ dashboardPage(skin="black",
                                )
                               ), 
               
-              dashboardBody(
+              dashboardBody( 
                 tags$head(tags$style(HTML('/* logo */
                                           .skin-black .main-header .logo {
                                           font-weight: bold;
@@ -54,7 +56,6 @@ dashboardPage(skin="black",
                                           .skin-blue .main-sidebar .sidebar .sidebar-menu a:hover{
                                           background-color: #9BDDFF;
                                           }'))),
-                
                 tabItems(
                   tabItem(tabName ="general",
                           fluidRow(plotlyOutput('gender'))
@@ -72,18 +73,12 @@ dashboardPage(skin="black",
                           )
                     
                           ),
-                  
-                  tabItem(tabName ="location",
-                          fluidRow(
-                            leafletOutput('location', height = 920)
-                          )
-                          
+
+                  tabItem(tabName ="location",  
+                          leafletOutput('location', height = '90vh')
                   ),
                   tabItem(tabName ="schoolMap",
-                          fluidRow(
-                            leafletOutput("schoolMap", height = 920)
-                          )
-                          
+                            leafletOutput("schoolMap", height = '90vh')
                   ),
                   tabItem(tabName = "exp"
                           )
