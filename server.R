@@ -66,13 +66,13 @@ shinyServer(function(input, output, session) {
       name = "Gender",
       type = "bar",
       marker = list(color = c('rgba(255, 133, 133,1)', 'rgba(158, 216, 255, 1)')))%>%
-      layout(autosize = F, width = 4, height = 900)
+      layout(autosize = T)#, width = 4, height = 900)
     
   })
   
   output$degree <- renderPlotly({
     g <- ggplot(degreeCount,aes(x=reorder(degree,countDegree),y=countDegree,fill=countDegree))+geom_bar(stat='identity')+coord_flip()
-    ggplotly(g)%>% layout(height = 900, width = 6)
+    ggplotly(g) %>% layout(autosize = T)
 
     })
   

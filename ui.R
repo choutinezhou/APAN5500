@@ -18,7 +18,8 @@ dashboardPage(skin="black",
                               ), 
               
               dashboardBody( 
-                tags$head(tags$style(HTML('/* logo */
+                tags$head(tags$style(HTML('#general{height:100vh !important;}
+                                          /* logo */
                                           .skin-black .main-header .logo {
                                           font-weight: bold;
                                           font-size: 25px;
@@ -58,20 +59,17 @@ dashboardPage(skin="black",
                                           }'))),
                 tabItems(
                   tabItem(tabName ="general",
-                          fluidRow(plotlyOutput('gender'))
+                          plotlyOutput('gender', height = "auto")),
                                    
                           # box(plotlyOutput('gender',height="auto",width = "auto"),height = 920,width = 6),
                           # box(plotlyOutput('degree',height="auto",width = "auto"),height = 920,width = 6))
                             
                             # column(width = 6, align = "center",box(plotlyOutput('gender'), width=6)),
                             # column(width = 6, align = "center",box(plotlyOutput('degree'), width=6)
-                          ),
+                          
                   
                   tabItem(tabName ="degree",
-                          fluidRow(
-                            plotlyOutput('degree', height = "800px")
-                          )
-                    
+                            plotlyOutput('degree', height = "auto")
                           ),
 
                   tabItem(tabName ="location",  
