@@ -1,8 +1,10 @@
 # if(!require(needs)){install.packages("needs")}
 needs::needs(shiny, shinydashboard, htmltools, dplyr, ggmap, leaflet, googleVis, ggplot2,
              plotly, RColorBrewer, tm, wordcloud)
+if(!require(chorddiag)){devtools::install_github("mattflor/chorddiag")}
 
 load("Load_at_start.RData")
+load("Load_ext.RData")
 
 #=================================== start server=====================================
 shinyServer(function(input, output, session) {
@@ -45,6 +47,10 @@ shinyServer(function(input, output, session) {
     
   })
   
+  output$interests <- renderChorddiag({
+    chorddiag(m, groupColors = groupColors, groupnamePadding = 40)
+    
+  })
   
   
 })
