@@ -1,7 +1,8 @@
-# if(!require(needs)){install.packages("needs")}
-needs::needs(shiny, shinydashboard, htmltools, dplyr, ggmap, leaflet, googleVis, ggplot2,
-             plotly, RColorBrewer, tm, wordcloud)
+if(!require(needs)){install.packages("needs")}
 if(!require(chorddiag)){devtools::install_github("mattflor/chorddiag")}
+needs::needs(shiny, shinydashboard, htmltools, dplyr, ggmap, leaflet, googleVis, ggplot2,
+             plotly, RColorBrewer, tm, wordcloud, chorddiag)
+
 
 load("Load_at_start.RData")
 load("Load_ext.RData")

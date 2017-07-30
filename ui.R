@@ -1,5 +1,5 @@
 needs::needs(shiny, shinydashboard, htmltools, dplyr, ggmap, leaflet, googleVis, ggplot2,
-             plotly, RColorBrewer, tm, SnowballC, wordcloud, shinythemes)
+             plotly, RColorBrewer, tm, SnowballC, wordcloud, shinythemes, chorddiag)
 
 dashboardPage(#skin="yellow", 
                           dashboardHeader(title = tagList(icon("fa-graduation-cap",class="fa fa-graduation-cap",lib = "font-awesome"), "APAN 5500 Classmates") ,titleWidth = 380),
